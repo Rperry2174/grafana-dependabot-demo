@@ -1,16 +1,13 @@
+# DEMO TUNING: cooldown removed so Dependabot opens PRs faster for Cursor agent demos.
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    cooldown:
-      default-days: 14 # wait 14 days before creating a PR for a new release
     commit-message:
       prefix: deps(actions)
     directory: "/"
     schedule:
       interval: "daily"
   - package-ecosystem: "gomod"
-    cooldown:
-      default-days: 14 # wait 14 days before creating a PR for a new release
     commit-message:
       prefix: deps(go)
     directories:
